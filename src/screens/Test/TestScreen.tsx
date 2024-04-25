@@ -13,6 +13,7 @@ import { Question } from "../../data/types";
 import { flagQuestions } from "../../data";
 import { solarSystemQuestions } from "../../data/solarSystem";
 import { jjkQuestions } from "../../data/jjk";
+import { bnhaQuestions } from "../../data/bnha";
 
 export function TestScreen({ navigation, route }: TestScreenProps) {
   const category = route.params.testName;
@@ -37,6 +38,8 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
           return solarSystemQuestions;
         case "jjk":
           return jjkQuestions;
+        case "bnha":
+          return bnhaQuestions;
       }
     })();
     setQuestions(shuffleArray(questions));
