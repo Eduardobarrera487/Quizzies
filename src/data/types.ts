@@ -27,4 +27,5 @@ export interface Test {
   duration: number;
 }
 
-export type TestName = "bsd" | "persona5" | "jjk";
+
+export type TestName = "bsd" | "persona5" | "jjk" | "bnha";
