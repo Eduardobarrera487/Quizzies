@@ -23,12 +23,12 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
   const startTimeRef = useRef<number>(Date.now());
   const pagerViewRef = useRef<PagerView>(null);
 
-  // States needed for the header
+  // NEcesarios para el header
   const [correctIndexes, setCorrectIndexes] = useState<number[]>([]);
   const [incorrectIndexes, setIncorrectIndexes] = useState<number[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
-  // Only run on intial render to load the questions
+  // Esto es para correr los tests
   useEffect(() => {
     const questions = (() => {
       switch (category) {
@@ -43,10 +43,10 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
       }
     })();
     setQuestions(shuffleArray(questions));
-    console.log("useEffect: load questions");
+    console.log("prueba de carga de test");
   }, [category]);
 
-  // Effect run to update the header
+
   useEffect(() => {
     if (questions.length > 0) {
       navigation.setOptions({
@@ -64,7 +64,6 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
         ),
       });
     }
-    console.log("useEffect: update header");
   }, [
     navigation,
     currentQuestionIndex,
@@ -74,7 +73,7 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
     pagerViewRef,
   ]);
 
-  // Effect run to determine if the user has answered all questions
+  // Determina si el ususario ha completado el test
   useEffect(() => {
     if (
       questions.length > 0 &&
@@ -86,7 +85,7 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
         timeTaken: Date.now() - startTimeRef.current,
       });
     }
-    console.log("useEffect: check if test is done");
+    console.log("probando");
   }, [
     navigation,
     questions.length,
@@ -124,6 +123,7 @@ interface PagerViewComponentProps {
   onPageSelected: (index: number) => void;
 }
 
+//guarda en memoria el valor que puso previamente en la pantalla anterior
 const MemoizedPagerView = memo(
   function PagerViewComponent({
     questions,
@@ -131,7 +131,7 @@ const MemoizedPagerView = memo(
     onAnswered,
     onPageSelected,
   }: PagerViewComponentProps) {
-    console.log("MemoizedPagerView");
+    
     return (
       <PagerView
         ref={pagerViewRef}
@@ -155,8 +155,7 @@ const MemoizedPagerView = memo(
       </PagerView>
     );
   },
-  // We don't compare functions because they are recreated on every render (this would make them unequal all the time)
-  // We could use useCallback but I believe this is better
+
   (prevProps, curProps) =>
     prevProps.questions.length === curProps.questions.length &&
     prevProps.pagerViewRef === curProps.pagerViewRef
