@@ -10,8 +10,8 @@ import { TestScreenProps } from "../types";
 import { View } from "react-native";
 import { shuffleArray } from "./shuffle";
 import { Question } from "../../data/types";
-import { flagQuestions } from "../../data";
-import { solarSystemQuestions } from "../../data/solarSystem";
+import { bsdQuestions } from "../../data/bsd";
+import { Persona5Questions } from "../../data/persona5";
 import { jjkQuestions } from "../../data/jjk";
 import { bnhaQuestions } from "../../data/bnha";
 
@@ -32,10 +32,10 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
   useEffect(() => {
     const questions = (() => {
       switch (category) {
-        case "flags":
-          return flagQuestions;
-        case "solarSystem":
-          return solarSystemQuestions;
+        case "bsd":
+          return bsdQuestions;
+        case "persona5":
+          return Persona5Questions;
         case "jjk":
           return jjkQuestions;
         case "bnha":
