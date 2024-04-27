@@ -18,7 +18,7 @@ export const bsdQuestions: Question[] = [
     question: "Quién es el protagonista del anime?",
     image: {
       uri: "https://resize.cdn.otakumode.com/ex/600.600/shop/product/b241de8fddb94716a00c7858ed859018.jpg",
-      alt: "Canada",
+      alt: "Atsushi",
     },
     options: [
       { id: "id:option/0", text: "Dazai Osamu", isCorrect: false },
@@ -35,7 +35,7 @@ export const bsdQuestions: Question[] = [
       "Quién es la rata del anime?",
     image: {
       uri: "https://i.pinimg.com/736x/3b/a5/26/3ba526767658a8c412e96fab0742bc5a.jpg",
-      alt: "rusia",
+      alt: "Fyodor",
     },
     options: [
       { id: "id:option/4", text: "Kunikida Doppo", isCorrect: false },
@@ -51,7 +51,7 @@ export const bsdQuestions: Question[] = [
     question:
       "Cuál personaje tiene 3 años",
     image: {
-      uri: "https://www.countryflags.com/wp-content/uploads/greece-flag-png-large.png",
+      uri: "https://s1.zerochan.net/Sigma.%28Bungou.Stray.Dogs%29.600.3970741.jpg",
       alt: "Sigma",
     },
     options: [
@@ -103,7 +103,7 @@ export const bsdQuestions: Question[] = [
       "Quién hace el rashomon?",
     image: {
       uri: "https://i.pinimg.com/564x/13/94/dc/1394dc1c97f2bad75e3faf5421689bcb.jpg",
-      alt: "Colombia",
+      alt: "Akugatawa",
     },
     options: [
       { id: "id:option/20", text: "Akutagawa Ryunosuke", isCorrect: true },
@@ -120,7 +120,7 @@ export const bsdQuestions: Question[] = [
       "Quién es el de los limones?",
     image: {
       uri: "https://i.pinimg.com/736x/b0/15/f8/b015f8a600a7ab3ec56ed2bcd670ab58.jpg",
-      alt: "Switzerland",
+      alt: "Kajii",
     },
     options: [
       { id: "id:option/24", text: "Ozaki Koyo", isCorrect: false },

@@ -98,8 +98,8 @@ export const Persona5Questions: Question[] = [
     question:
       "Cómo se llama el lugar donde los enemigos guardan sus tesoros?",
       image: {
-        uri: "https://www.comingsoon.net/wp-content/uploads/sites/3/2023/09/Jujutsu-Kaisen-Chapter-237-Release-Date.jpg",
-        alt: "Satoru Gojo",
+        uri: "https://www.yukharyan.com/wp-content/uploads/2020/11/mejores-palacios-persona-5-royal.jpg",
+        alt: "Palacios",
       },
     options: [
       { id: "id:option/60", text: "Palacios", isCorrect: true },
