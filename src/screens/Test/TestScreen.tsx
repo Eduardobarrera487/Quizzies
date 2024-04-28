@@ -14,6 +14,12 @@ import { bsdQuestions } from "../../data/bsd";
 import { Persona5Questions } from "../../data/persona5";
 import { jjkQuestions } from "../../data/jjk";
 import { bnhaQuestions } from "../../data/bnha";
+import { pop1Questions, pop1Test } from "../../data/pop1";
+import { initialdQuestions } from "../../data/initiald";
+import { pop2Questions } from "../../data/pop2";
+import { programacion1Questions } from "../../data/programacion1";
+import { music1Questions } from "../../data/music1";
+import { cienciaQuestions } from "../../data/ciencia";
 
 export function TestScreen({ navigation, route }: TestScreenProps) {
   const category = route.params.testName;
@@ -40,6 +46,19 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
           return jjkQuestions;
         case "bnha":
           return bnhaQuestions;
+        case "initiald":
+          return initialdQuestions;
+        case "pop1":
+          return pop1Questions;
+        case "pop2":
+          return pop2Questions;
+        case "music1":
+          return music1Questions;
+        case "programacion1":
+          return programacion1Questions;
+        case "ciencia":
+          return cienciaQuestions;
+        
       }
     })();
     setQuestions(shuffleArray(questions));
