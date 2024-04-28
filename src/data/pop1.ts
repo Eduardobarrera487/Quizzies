@@ -7,12 +7,12 @@ export const pop1Test: Test = {
   numOfQuestions: 10,
   duration: 10,
   image: {
-    uri: "https://templeofgeek.com/wp-content/uploads/2022/09/wordpress-header-1-2.jpg",
+    uri: "https://i.ytimg.com/vi/Ok1SvEOkido/maxresdefault.jpg",
     alt: "bsd",
   },
 };
 
-export const bsdQuestions: Question[] = [
+export const pop1Questions: Question[] = [
   {
     id: "id:question/0",
     question: "De que ciudad son los Beatles?",
@@ -91,7 +91,7 @@ export const bsdQuestions: Question[] = [
     options: [
       { id: "id:option/16", text: "Luigi", isCorrect: true },
       { id: "id:option/17", text: "Yoshi", isCorrect: false },
-      { id: "id:option/18", text: "", isCorrect: false },
+      { id: "id:option/18", text: "Bowser", isCorrect: false },
       { id: "id:option/19", text: "Toad", isCorrect: false },
     ],
     answerDescription:
