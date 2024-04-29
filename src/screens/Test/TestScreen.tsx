@@ -20,11 +20,17 @@ import { pop2Questions } from "../../data/pop2";
 import { programacion1Questions } from "../../data/programacion1";
 import { music1Questions } from "../../data/music1";
 import { cienciaQuestions } from "../../data/ciencia";
+import { saikiQuestions } from "../../data/saiki";
+import { parasocialQuestions } from "../../data/parasocial";
+import { givenQuestions } from "../../data/given";
+import { ideQuestions } from "../../data/ide";
+import { carsQuestions } from "../../data/carros";
 import { desamovilQuestions } from "../../data/desamovil";
 import { desawebQuestions } from "../../data/desaweb";
 import { githubQuestions } from "../../data/git";
 import { tlouQuestions } from "../../data/tlou";
 import { seguridadQuestions } from "../../data/seguridad";
+
 
 export function TestScreen({ navigation, route }: TestScreenProps) {
   const category = route.params.testName;
@@ -63,6 +69,16 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
           return programacion1Questions;
         case "ciencia":
           return cienciaQuestions;
+        case "saiki":
+          return saikiQuestions;
+        case "parasocial":
+          return parasocialQuestions;
+        case "given":
+          return givenQuestions;
+        case "ide":
+          return ideQuestions;
+        case "cars":
+          return carsQuestions;
         case "desamovil":
           return desamovilQuestions;
         case "desaweb":
