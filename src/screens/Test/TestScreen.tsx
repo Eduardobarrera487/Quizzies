@@ -20,6 +20,11 @@ import { pop2Questions } from "../../data/pop2";
 import { programacion1Questions } from "../../data/programacion1";
 import { music1Questions } from "../../data/music1";
 import { cienciaQuestions } from "../../data/ciencia";
+import { desamovilQuestions } from "../../data/desamovil";
+import { desawebQuestions } from "../../data/desaweb";
+import { githubQuestions } from "../../data/git";
+import { tlouQuestions } from "../../data/tlou";
+import { seguridadQuestions } from "../../data/seguridad";
 
 export function TestScreen({ navigation, route }: TestScreenProps) {
   const category = route.params.testName;
@@ -58,6 +63,16 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
           return programacion1Questions;
         case "ciencia":
           return cienciaQuestions;
+        case "desamovil":
+          return desamovilQuestions;
+        case "desaweb":
+          return desawebQuestions;
+        case "github":
+          return githubQuestions;
+        case "tlou":
+          return tlouQuestions;
+        case "seguridad":
+          return seguridadQuestions;
         
       }
     })();
