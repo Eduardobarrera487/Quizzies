@@ -28,4 +28,4 @@ export interface Test {
 }
 
 
-export type TestName = "bsd" | "persona5" | "jjk" | "bnha" | "pop1" | "pop2" | "programacion1" | "initiald";
+export type TestName = "bsd" |"desamovil"|"seguridad"|"tlou"| "desaweb"| "github" | "persona5" | "jjk" | "bnha" | "music1" | "ciencia" |"pop1"|"pop2" | "programacion1" | "initiald";
