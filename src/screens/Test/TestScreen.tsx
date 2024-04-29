@@ -25,6 +25,12 @@ import { parasocialQuestions } from "../../data/parasocial";
 import { givenQuestions } from "../../data/given";
 import { ideQuestions } from "../../data/ide";
 import { carsQuestions } from "../../data/carros";
+import { desamovilQuestions } from "../../data/desamovil";
+import { desawebQuestions } from "../../data/desaweb";
+import { githubQuestions } from "../../data/git";
+import { tlouQuestions } from "../../data/tlou";
+import { seguridadQuestions } from "../../data/seguridad";
+
 
 export function TestScreen({ navigation, route }: TestScreenProps) {
   const category = route.params.testName;
@@ -73,6 +79,16 @@ export function TestScreen({ navigation, route }: TestScreenProps) {
           return ideQuestions;
         case "cars":
           return carsQuestions;
+        case "desamovil":
+          return desamovilQuestions;
+        case "desaweb":
+          return desawebQuestions;
+        case "github":
+          return githubQuestions;
+        case "tlou":
+          return tlouQuestions;
+        case "seguridad":
+          return seguridadQuestions;
         
       }
     })();
